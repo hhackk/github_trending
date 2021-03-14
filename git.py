@@ -62,7 +62,7 @@ def getItems(url, type='', lang=''):
     if stars1 != None:
       stars = stars1.get_text().strip()
     lang=""
-    language = li.find('div', class_='f6 text-gray mt-2').find(name='span', attrs={"itemprop" :"programmingLanguage"})
+    language = li.find('div', class_='f6 color-text-secondary mt-2').find(name='span', attrs={"itemprop" :"programmingLanguage"})
     if language != None:
       lang =  language.get_text().strip()
     all_names.add(address)  
