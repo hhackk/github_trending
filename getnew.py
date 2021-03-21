@@ -5,7 +5,7 @@ import sqlite3
 import sys
 from github import Github
 
-g = Github("21a33b4f78d3405abb547ee385e39a23c28a20be")
+g = Github("1f83e7f8b0d9ee4f1172e415b749ba55b1c2b82e")
 #repo = g.get_repo("PyGithub/PyGithub")
 #print repo.created_at
 
