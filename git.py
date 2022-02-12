@@ -32,7 +32,7 @@ def insert2DB( name, language, description, stars, date=0):
     stars2 = 0
   else:
     stars2 = int(stars.replace(',', ''))  
-  if stars2 < 15:
+  if stars2 < 10:
     return
   c = conn.cursor()
   c.execute("INSERT INTO github_treading_table VALUES (?, ?, ?, ?, ?)", \
