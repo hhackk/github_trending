@@ -48,7 +48,7 @@ def getItems(url, type='', lang=''):
   items = {}
   for li in soup.find_all('article', class_="Box-row"):
     desc2=''
-    address = li.find('h1', class_='h3 lh-condensed').a.get('href')  
+    address = li.find('h2', class_='h3 lh-condensed').a.get('href')  
     if address in all_names:
       continue    
     if li.p != None:
