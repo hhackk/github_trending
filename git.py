@@ -68,7 +68,7 @@ def getItems(url, type='', lang=''):
     all_names.add(address)  
 
     insert2DB(address, lang, desc2, stars)  
-    print address
+    print(address)
 
     f.write('<a href="%s"><h >'%address+address+'</h></a>')
     f.write('<h>        '+lang+'</h>')
