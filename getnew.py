@@ -15,9 +15,9 @@ def escape(s):
   s = s.replace(">", "&gt;")
   return s
 
-reload(sys)    
+#reload(sys)    
 
-sys.setdefaultencoding('utf-8') 
+#sys.setdefaultencoding('utf-8') 
 
 
 
@@ -37,7 +37,7 @@ cursor = c.execute("SELECT name, language, description, stars, date from github_
 
 for row in cursor:
 
-  print 'name=', row[0]
+  print('name=', row[0])
 
   #print 'language=', row[1]
 
