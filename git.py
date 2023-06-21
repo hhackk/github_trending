@@ -1,6 +1,6 @@
-0# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import requests
-import commands
+#import commands
 import os
 from bs4 import BeautifulSoup
 import fileinput
