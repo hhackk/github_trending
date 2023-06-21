@@ -8,8 +8,8 @@ import sys
 import json
 import sqlite3
 
-reload(sys)    
-sys.setdefaultencoding('utf-8') 
+#reload(sys)    
+#sys.setdefaultencoding('utf-8') 
 global conn
 conn = sqlite3.connect('test.db')
 f = open('new.html','w')
