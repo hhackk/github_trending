@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+0# -*- coding: utf-8 -*-
 import requests
 import commands
 import os
@@ -86,7 +86,7 @@ langs = ['','java', 'python', 'c++', 'html', 'css','typescript','javascript', 'p
 for date in since:
   for lang in langs:
     url = 'https://github.com/trending/%s?since=%s'%(lang, date)
-    print url
+    print(url)
     getItems(url)
 conn.close()
 f.close()
