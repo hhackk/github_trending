@@ -55,7 +55,7 @@ def getItems(url, type='', lang=''):
       try:
         desc2 = li.p.get_text().strip()
       except:
-        print 'xx'
+        print('exception')
     
     stars1 =  li.find('div', class_='f6 color-fg-muted mt-2').a
     stars = ""
