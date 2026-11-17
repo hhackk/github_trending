@@ -15,8 +15,11 @@ conn = sqlite3.connect('test.db')
 f = open('new.html','w')
 f.write('<html>')
 f.write('<head><base href="https://github.com/"/></head>')  
-r = requests.get('http://quan.suning.com/getSysTime.do')
-nowTime = json.loads(r.text)['sysTime1']   
+#r = requests.get('http://quan.suning.com/getSysTime.do')
+#nowTime = json.loads(r.text)['sysTime1']
+from datetime import datetime
+from zoneinfo import ZoneInfo
+nowTime = datetime.now(ZoneInfo("Asia/Shanghai")).strftime('%Y%m%d%H%M%S')
 
 def load():
   global all_names
